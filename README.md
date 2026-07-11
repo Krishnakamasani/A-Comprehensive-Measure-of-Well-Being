@@ -1,242 +1,232 @@
-# A Comprehensive Measure of Well-Being
+# 🌍 A Comprehensive Measure of Well-Being
 
 ## Human Development Index (HDI) Prediction System
 
-### Project Overview
-
-The Human Development Index (HDI) Prediction System is a Machine Learning and Flask-based web application that predicts the Human Development Index of a country using important socio-economic indicators.
-
-The project follows the complete Machine Learning lifecycle including data collection, preprocessing, visualization, model training, evaluation, and deployment.
+A Machine Learning web application that predicts the **Human Development Index (HDI)** using **Linear Regression** and **Flask**. The application allows users to enter socio-economic indicators and predicts the corresponding HDI value along with its development category.
 
 ---
 
-## Objectives
+## 📌 Project Overview
 
-- Analyze Human Development Index data.
-- Understand the relationship between education, health, and income.
-- Build a Linear Regression model to predict HDI.
-- Deploy the trained model using Flask.
-- Provide a simple web interface for user predictions.
+The Human Development Index (HDI) is a statistical measure used to evaluate the overall development of a country based on key indicators such as:
+
+- Life Expectancy at Birth
+- Expected Years of Schooling
+- Mean Years of Schooling
+- Gross National Income (GNI) per Capita
+
+This project builds a Machine Learning model to estimate the HDI from these indicators and provides a user-friendly Flask web interface for predictions.
 
 ---
 
-## Technologies Used
+## 🚀 Features
+
+- Data preprocessing and cleaning
+- Missing value handling
+- Feature selection
+- Linear Regression model training
+- Model evaluation
+- Model serialization using Pickle (`HDI.pkl`)
+- Flask backend integration
+- Modern and responsive web interface
+- Real-time HDI prediction
+- HDI category classification:
+  - Low HDI
+  - Medium HDI
+  - High HDI
+  - Very High HDI
+
+---
+
+## 🛠️ Technologies Used
 
 ### Programming Language
+- Python
 
-- Python 3.x
+### Machine Learning
+- Scikit-learn
+- Linear Regression
 
-### IDE
-
-- Visual Studio Code
-- Jupyter Notebook
-
-### Libraries
-
-- NumPy
+### Data Analysis
 - Pandas
+- NumPy
+
+### Data Visualization
 - Matplotlib
 - Seaborn
-- Scikit-learn
+
+### Web Framework
 - Flask
-- Pickle
+
+### Frontend
+- HTML5
+- CSS3
 
 ### Version Control
-
 - Git
 - GitHub
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
+```text
 A-Comprehensive-Measure-of-Well-Being
 │
 ├── Dataset
 │   └── HDI.csv
 │
-├── docs
-│   ├── ER_Diagram.png
-│   ├── Links.md
-│   └── Project_Workflow.md
-│
 ├── Flask
 │   ├── app.py
 │   ├── HDI.pkl
-│   └── templates
-│       ├── index.html
-│       └── result.html
+│   ├── templates
+│   │   ├── index.html
+│   │   └── result.html
+│   │
+│   └── static
+│       ├── css
+│       │   └── style.css
+│       │
+│       └── images
+│           └── background.jpg
 │
 ├── Training
 │   └── HumDevIndex.ipynb
 │
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ---
 
-## Completed Work
+## ⚙️ Machine Learning Workflow
 
-### ✅ Entity Relationship Diagram
-
-Created the ER Diagram describing the relationship between:
-
-- User
-- Country
-- HDI Input Data
-- Dataset
-- ML Model
-- HDI Prediction
-- Visualization Report
-- Session
-
----
-
-### ✅ Project Workflow
-
-Completed the overall workflow including:
-
-- Environment Setup
-- Import Libraries
-- Dataset Collection
-- Data Understanding
-- Data Visualization
-- Model Development
-- Flask Deployment
+1. Import Required Libraries
+2. Load HDI Dataset
+3. Explore Dataset
+4. Handle Missing Values
+5. Select Important Features
+6. Split Dataset into Training and Testing Sets
+7. Train Linear Regression Model
+8. Evaluate Model Performance
+9. Save Model using Pickle
+10. Build Flask Web Application
+11. Deploy Prediction Interface
 
 ---
 
-### ✅ Environment Setup
+## 📊 Input Features
 
-- Python Environment
-- Virtual Environment
-- Required Packages Installation
-- GitHub Repository Setup
-- Project Folder Structure
+The prediction model accepts the following inputs:
 
----
-
-### ✅ Required Libraries
-
-Imported:
-
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Pickle
-- Flask
+| Feature | Description |
+|---------|-------------|
+| Life Expectancy at Birth | Average expected lifespan |
+| Expected Years of Schooling | Years of education expected |
+| Mean Years of Schooling | Average completed education |
+| Gross National Income (GNI) per Capita | Income per person |
 
 ---
 
-### ✅ Dataset
+## 📈 Output
 
-Downloaded and loaded the Human Development Index dataset.
+The application predicts:
 
-Dataset contains information such as:
+- Human Development Index (HDI)
+- HDI Category
 
-- Country
-- HDI Rank
-- Human Development Index
-- Life Expectancy
-- Expected Years of Schooling
-- Mean Years of Schooling
-- Gross National Income Per Capita
-
----
-
-### ✅ Dataset Understanding
-
-Performed:
-
-- Displayed first five records
-- Dataset Shape
-- Column Names
-- Data Types
-- Dataset Information
-- Statistical Summary
-- Missing Value Analysis
-
----
-
-### ✅ Data Cleaning
-
-Completed:
-
-- Removed unnecessary columns
-- Replaced missing values
-- Converted numeric columns
-- Prepared dataset for visualization
-
----
-
-### ✅ Data Visualization
-
-Created visualizations including:
-
-- Mean Years of Schooling vs HDI
-- Life Expectancy vs HDI
-- Correlation Heatmap
-
----
-
-## Current Progress
-
-| Module | Status |
-|----------|---------|
-| ER Diagram | ✅ Completed |
-| Project Workflow | ✅ Completed |
-| Environment Setup | ✅ Completed |
-| Required Libraries | ✅ Completed |
-| Dataset Download | ✅ Completed |
-| Dataset Understanding | ✅ Completed |
-| Data Cleaning | ✅ Completed |
-| Data Visualization | ✅ Completed |
-| Data Preprocessing | ⏳ In Progress |
-| Model Training | ⏳ Pending |
-| Flask Deployment | ⏳ Pending |
-
----
-
-## Next Steps
-
-- Data Preprocessing
-- Label Encoding
-- Train-Test Split
-- Linear Regression Model
-- Model Evaluation
-- Save Model using Pickle
-- Flask Web Application
-- Final Deployment
-
----
-
-## Team Members
-
-- Krishna Prasad Kamasani (Team Lead)
-- Giri Chunduru
-- Yesu Raju Garnepudi
-- Shanmukha Surya Manikanta Kattika
-- Vinay Kumar Jammula
-
----
-
-## Repository
-
-GitHub Repository
+Example:
 
 ```
+Very High HDI : 0.84
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Krishnakamasani/A-Comprehensive-Measure-of-Well-Being.git
+```
+
+### Navigate to Project
+
+```bash
+cd A-Comprehensive-Measure-of-Well-Being
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Flask Application
+
+```bash
+cd Flask
+python app.py
+```
+
+### Open Browser
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📸 Application Screenshots
+
+### Home Page
+
+> The application provides an attractive user interface for entering HDI-related features.
+
+### Prediction Result
+
+> After submitting the input values, the application predicts the Human Development Index and displays its development category.
+
+---
+
+## 🌐 GitHub Repository
+
+**Repository:**
+
 https://github.com/Krishnakamasani/A-Comprehensive-Measure-of-Well-Being
-```
 
 ---
 
-## Project Status
+## 🖼️ Background Image
 
-**Current Completion:** Approximately **55%**
+The web interface uses a background image located at:
 
-The project has successfully completed the initial setup, dataset analysis, cleaning, and visualization phases. The remaining work focuses on data preprocessing, machine learning model development, and Flask deployment.
+```text
+Flask/static/images/background.jpg
+```
+
+Ensure this file is included in the repository so the application displays the intended UI.
+
+---
+
+## 📚 Future Improvements
+
+- Support multiple Machine Learning algorithms
+- Add data visualization dashboard
+- Deploy on Render or Railway
+- Mobile responsive design improvements
+- Input validation with better error handling
+- Database integration for storing predictions
+
+---
+
+# ✅ Conclusion
+
+This project successfully developed a **Human Development Index (HDI) Prediction System** using **Machine Learning** and **Flask**. A Linear Regression model was trained after preprocessing the dataset, handling missing values, and selecting the most relevant features.
+
+The trained model was integrated into a Flask web application that allows users to enter values such as **Life Expectancy at Birth**, **Expected Years of Schooling**, **Mean Years of Schooling**, and **Gross National Income (GNI) per Capita** to predict the Human Development Index. The application displays both the predicted HDI value and its corresponding development category through a clean and interactive user interface.
+
+This project demonstrates the complete machine learning workflow, including data preprocessing, feature engineering, model training, model serialization using Pickle, backend development with Flask, and frontend integration using HTML and CSS. It provided valuable hands-on experience in building an end-to-end machine learning application and strengthened practical knowledge of Python, Scikit-learn, Flask, Git, and GitHub.
+
+---
