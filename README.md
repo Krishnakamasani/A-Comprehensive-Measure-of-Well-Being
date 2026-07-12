@@ -204,11 +204,9 @@ The web interface uses a background image located at:
 
 ```text
 Flask/static/images/background.jpg
-```
 
 Ensure this file is included in the repository so the application displays the intended UI.
 
----
 
 ## 📚 Future Improvements
 
@@ -219,7 +217,6 @@ Ensure this file is included in the repository so the application displays the i
 - Input validation with better error handling
 - Database integration for storing predictions
 
----
 
 # ✅ Conclusion
 
@@ -228,5 +225,3 @@ This project successfully developed a **Human Development Index (HDI) Prediction
 The trained model was integrated into a Flask web application that allows users to enter values such as **Life Expectancy at Birth**, **Expected Years of Schooling**, **Mean Years of Schooling**, and **Gross National Income (GNI) per Capita** to predict the Human Development Index. The application displays both the predicted HDI value and its corresponding development category through a clean and interactive user interface.
 
 This project demonstrates the complete machine learning workflow, including data preprocessing, feature engineering, model training, model serialization using Pickle, backend development with Flask, and frontend integration using HTML and CSS. It provided valuable hands-on experience in building an end-to-end machine learning application and strengthened practical knowledge of Python, Scikit-learn, Flask, Git, and GitHub.
-
----
