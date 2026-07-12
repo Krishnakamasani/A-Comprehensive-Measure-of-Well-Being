@@ -42,7 +42,7 @@ def home():
 # Prediction Page Route
 # ============================
 
-@app.route("/Prediction", methods=["GET", "POST"])
+@app.route("/prediction", methods=["GET", "POST"])
 def prediction():
     """
     Opens the prediction page.
@@ -52,7 +52,7 @@ def prediction():
 
 # Optional route (same as home page)
 
-@app.route("/Home", methods=["GET", "POST"])
+@app.route("/home", methods=["GET", "POST"])
 def my_home():
     return render_template("index.html")
 
